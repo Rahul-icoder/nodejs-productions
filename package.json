@@ -4,8 +4,19 @@
   "description": "nodejs-production",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/server.ts",
+    "start": "node dist/index.js",
+    "dist": "npx tsc",
+    "prepare": "husky"
   },
   "author": "rahul",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.5.1",
+    "husky": "^9.1.5",
+    "lint-staged": "^15.2.9",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
 }
